@@ -5,9 +5,47 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(90, 49, 90, 0.886); /* 70% opacity blue */
+  display: flex;
+  justify-content: center;
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  height: 26em;
+  border-radius: 1rem;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 2px solid transparent;
+  color: black;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  transition: border-color 0.25s, color 0.25s;
+}
+
+button:hover,
+button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+.toggle {
+  box-shadow: 0.3em 0.3em 0 0 var(--color-toggle),
+    inset 0.3em 0.3em 0 0 var(--color-toggle);
+}
+
+.toggle:hover,
+.toggle:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }
